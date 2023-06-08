@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Recommendations</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <script src="/js/script.js"></script>
+  <style>
+    /* Add your custom CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #007bff;
+      color: #fff;
+      margin: 0;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ff0000;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="url"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    button[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Submit Your book</h1>
+
+
+  <form id="submitForm">
+    <label for="bookName">Book Name:</label>
+    <input type="text" id="bookName" required><br>
+
+    <label for="author">Author:</label>
+    <input type="text" id="author" required><br>
+
+    <label for="category">Category:</label>
+    <input type="text" id="category" required><br>
+
+    <label for="votes">Votes:</label>
+    <input type="number" id="votes" required><br>
+
+    <label for="cover">Cover Image URL:</label>
+    <input type="url" id="cover" required><br>
+
+    <label for="url">Book URL:</label>
+    <input type="url" id="url" required><br>
+
+    <button id ="submit" type="submit">Submit</button>
+  </form>
+
+  
+</body>
+</html>
+
